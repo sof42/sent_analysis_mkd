@@ -17,6 +17,17 @@ This project implements a **rule-based sentiment analysis system** for the Maced
 - `Merged Lexicon/`
   - `MK_POSITIVE_merged.txt`
   - `MK_NEGATIVE_merged.txt`
+- `Latin Transliterated Lexicon/`  - Transliterated the aforementioned lexicons from cyrillic script to latin
+  - `Initial Translated Lexicon/`  
+    - `MK_POSITIVE_transliterated.txt`  
+    - `MK_NEGATIVE_transliterated.txt`  
+    - `MK_intensifiers_transliterated.txt`  
+    - `MK_diminishers_transliterated.txt`  
+    - `МК_polarityShifters_transliterated.txt`  
+    - `MK_stopwords_transliterated.txt`  
+  - `Merged Transliterated Lexicon/`  
+    - `MK_POSITIVE_merged_transliterated.txt`  
+    - `MK_NEGATIVE_merged_transliterated.txt`
 - `sentimentAnalyzer.py` – Main rule-based sentiment classifier  
 - `test_data.mo` – Annotated Macedonian Twitter dataset (Exact one from the Jovanoski et al paper) 
 - `README.md` 
@@ -53,3 +64,6 @@ Run the sentiment analyzer with:
 ```bash
 python sentimentAnalyzer.py
 ```
+## ℹ️ Notes
+
+- The **Latin Transliterated Lexicon** files were generated using the online transliteration tool from [Lexilogos](https://www.lexilogos.com/keyboard/macedonian_conversion.htm).
